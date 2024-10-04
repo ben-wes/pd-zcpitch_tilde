@@ -1,0 +1,14 @@
+#N canvas 1389 792 450 300 10;
+#X obj 104 61 hsl 136 16 10 10000 1 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X floatatom 101 82 5 0 0 0 - - - 0;
+#X obj 101 102 osc~;
+#X obj 101 194 snapshot~;
+#X floatatom 101 215 10 0 0 0 - - - 0;
+#X obj 112 169 bang~;
+#X obj 101 123 zcpitch~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
